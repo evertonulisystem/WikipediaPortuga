@@ -15,10 +15,10 @@ public class Hooks extends Base{
     }
     @Before
     public  void setup(){//iniciar
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver92/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver93/chromedriver.exe");
         base.driver= new ChromeDriver();
         base.driver.manage().window().maximize();
-        base.driver.manage().timeouts().implicitlyWait(60000, TimeUnit.MILLISECONDS);
+        base.driver.manage().timeouts().implicitlyWait(90000, TimeUnit.MILLISECONDS);
     }
 
     @After
